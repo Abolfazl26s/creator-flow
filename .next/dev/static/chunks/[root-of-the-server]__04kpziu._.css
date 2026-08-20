@@ -164,6 +164,10 @@
 
 @layer theme {
   :root, :host {
+    --color-red-300: #ffa3a3;
+    --color-red-950: #460809;
+    --color-emerald-300: #5ee9b5;
+    --color-emerald-950: #002c22;
     --color-cyan-300: #53eafd;
     --color-cyan-400: #00d2ef;
     --color-slate-200: #e2e8f0;
@@ -204,6 +208,10 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
+      --color-red-300: lab(76.5514% 36.422 15.5335);
+      --color-red-950: lab(13.003% 29.04 16.7519);
+      --color-emerald-300: lab(83.9203% -48.7124 13.8849);
+      --color-emerald-950: lab(15.0582% -17.9507 2.38369);
       --color-cyan-300: lab(85.3886% -36.7636 -21.5716);
       --color-cyan-400: lab(76.6045% -40.9406 -29.6231);
       --color-slate-200: lab(91.7353% -.998765 -4.76968);
@@ -595,12 +603,24 @@
     background-color: var(--color-cyan-400);
   }
 
+  .bg-emerald-950 {
+    background-color: var(--color-emerald-950);
+  }
+
+  .bg-red-950 {
+    background-color: var(--color-red-950);
+  }
+
   .bg-slate-900 {
     background-color: var(--color-slate-900);
   }
 
   .bg-slate-950 {
     background-color: var(--color-slate-950);
+  }
+
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
 
   .p-8 {
@@ -629,6 +649,10 @@
 
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+
+  .text-center {
+    text-align: center;
   }
 
   .text-2xl {
@@ -678,6 +702,14 @@
 
   .text-cyan-400 {
     color: var(--color-cyan-400);
+  }
+
+  .text-emerald-300 {
+    color: var(--color-emerald-300);
+  }
+
+  .text-red-300 {
+    color: var(--color-red-300);
   }
 
   .text-slate-200 {
@@ -737,10 +769,22 @@
     .hover\:bg-cyan-300:hover {
       background-color: var(--color-cyan-300);
     }
+
+    .hover\:text-cyan-300:hover {
+      color: var(--color-cyan-300);
+    }
   }
 
   .focus\:border-cyan-400:focus {
     border-color: var(--color-cyan-400);
+  }
+
+  .disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+
+  .disabled\:opacity-60:disabled {
+    opacity: .6;
   }
 
   @media (min-width: 40rem) {

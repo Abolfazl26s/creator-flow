@@ -19,12 +19,21 @@ export default function HomePage() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/login"
-              className="rounded-lg bg-cyan-400 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-300"
-            >
-              Get started
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/signup"
+                className="rounded-lg bg-cyan-400 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-300"
+              >
+                Create account
+              </Link>
+
+              <Link
+                href="/login"
+                className="rounded-lg border border-slate-700 px-5 py-3 font-medium text-slate-200 transition hover:border-slate-500"
+              >
+                Sign in
+              </Link>
+            </div>
 
             <a
               href="https://github.com"
