@@ -126,8 +126,8 @@ export default function DashboardAppShell({
   }
 
   return (
-    <div className="min-h-[100dvh] bg-slate-950 text-white">
-      <div className="flex min-h-[100dvh]">
+    <div className="min-h-dvh bg-slate-950 text-white">
+      <div className="flex min-h-dvh">
         <aside
           className={`hidden shrink-0 border-r border-slate-800 bg-slate-900 p-4 transition-[width] duration-200 lg:flex lg:flex-col ${
             isDesktopSidebarCollapsed ? "w-20" : "w-64"
@@ -252,7 +252,7 @@ export default function DashboardAppShell({
       </div>
 
       {isMobileMenuOpen ? (
-        <div className="fixed inset-0 z-[60] lg:hidden">
+        <div className="fixed inset-0 z-60 lg:hidden">
           <button
             type="button"
             aria-label="Close navigation menu"

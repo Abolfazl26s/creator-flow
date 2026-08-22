@@ -4,3 +4,7 @@ out/
 .env*
 !.env.example
 .DS_Storetsconfig.tsbuildinfo
+
+AGENTS.md
+docs/PROJECT_CONTEXT.md
+.github/copilot-instructions.md
