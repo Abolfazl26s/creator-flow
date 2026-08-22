@@ -45,7 +45,7 @@ const recentProjects = [
 export default function DashboardPage() {
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
             Overview
@@ -62,7 +62,7 @@ export default function DashboardPage() {
 
         <button
           type="button"
-          className="rounded-lg bg-cyan-400 px-4 py-2.5 text-sm font-medium text-slate-950 transition hover:bg-cyan-300"
+          className="w-full rounded-lg bg-cyan-400 px-4 py-3 text-sm font-medium text-slate-950 transition hover:bg-cyan-300 sm:w-auto"
         >
           New project
         </button>
