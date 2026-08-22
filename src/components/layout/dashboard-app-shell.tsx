@@ -22,6 +22,7 @@ import MobileBottomNav from "@/components/layout/mobile-bottom-nav";
 type DashboardAppShellProps = {
   children: ReactNode;
   userEmail: string;
+  workspaceName: string;
 };
 
 type NavigationItem = {
@@ -112,6 +113,7 @@ function NavigationLinks({
 export default function DashboardAppShell({
   children,
   userEmail,
+  workspaceName,
 }: DashboardAppShellProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDesktopSidebarCollapsed, setIsDesktopSidebarCollapsed] =
@@ -216,7 +218,7 @@ export default function DashboardAppShell({
                 <p className="text-xs text-slate-500 sm:text-sm">Workspace</p>
 
                 <p className="truncate text-sm font-medium text-white sm:text-base">
-                  My Creative Space
+                  {workspaceName}
                 </p>
               </div>
             </div>
